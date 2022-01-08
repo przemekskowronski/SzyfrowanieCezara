@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js">
+	</script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8" />
+
+	<!-- metadata -->
+	<title>Kod Cezara</title>
+	<meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<meta name="site_name" content="Kod Cezara">
+	<meta name="author" content="Przemysław Skowroński">
+	<meta name="image" content="/caesar-wheel.png">
+	<meta name="url" content="https://editor.p5js.org/eliskol/full/GOiz4gVTI">
+	<meta name="title" content="Kod Cezara - encoder/decoder">
+	<meta name="description" content="Kod Cezara">
+	<meta name="og:site_name" content="Kod Cezara">
+	<meta name="theme-color" content="#32353b">
+	<meta name="og:image" content="/caesar-wheel.png">
+	<meta name="og:url" content="https://editor.p5js.org/eliskol/full/GOiz4gVTI">
+	<meta name="og:title" content="Kod Cezara - encoder/decoder">
+	<meta name="og:description" content="Kod Cezara">
+	<link rel="icon" type="image/png" href="/caesar-wheel.png">
+	<!-- end of metadata -->
+
+
+
+</head>
+
+<body>
+	<p>Tekst do zakodowania lub odkodowania:</p>
+	<input type="text" id="text" autofocus="true"></input>
+  <p>Po zmianie:</p>
+  
+<p id = "helper">(musi być pomiędzy -26 a 26)</p>
+  <input type="number" id="shift"></input>
+  </br>
+  <button onclick="encode();"> zaszyfrój </button>
+  <button onclick="decode();"> odszyfruj </button>
+  <script src="encode.js"></script>
+	<br>
+  <script src="decode.js"></script>
+	<br><br>
+  <i>Szyfr Cezara jest jednym z najstarszych sposobów szyfrowania.
+	  Juliusz Cezar szyfrował tym sposobem swoje wiadomości do Cycerona.
+	  Jest to jedna z najprostszych technik szyfrowania. Jest to szyfr podstawieniowy,
+	  w którym każdą literę tekstu niezaszyfrowanego zastępujemy oddaloną od niej o stałą
+	  liczbę pozycji w alfabecie inną literą, przy czym musimy zachować kierunek zmiany.</i>
+	<br><br>
+</body>
+
+</html>
